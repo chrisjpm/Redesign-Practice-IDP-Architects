@@ -2,11 +2,34 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{{domain}}} {{title}}</title>
+
+    <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="stylesheet" href="../public/uikit/css/uikit.min.css">
   </head>
   <body>
-    {{>header}}
-    {{{body}}}
-    {{>footer}}
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../public/js/main.js"></script>
+    <script type="text/javascript" src="../public/uikit/js/uikit.min.js"></script>
+    <script type="text/javascript" src="../public/uikit/js/uikit-icons.min.js"></script>
+
+    {{#if home}}
+      <header>
+        {{>header-home}}
+      </header>
+    {{else}}
+      <header id="header-nothome">
+        {{>header}}
+      </header>
+    {{/if}}
+
+    <main>
+      {{{body}}}
+    </main>
+
+    <!-- <footer class="uk-margin-remove">
+      {{>footer}}
+    </footer> -->
   </body>
 </html>

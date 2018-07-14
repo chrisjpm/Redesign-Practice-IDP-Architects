@@ -1,5 +1,64 @@
+/* Margins */
 body {
-  background-image: url('../res/cover.jpg');
+  margin: 0;
+}
+.container-xs {
+  max-width: 70vw !important;
+}
+/* Partials */
+header {
+  position: absolute;
+  padding: 25px;
+  height: 10vh;
+  width: calc(100% - 50px);
+}
+/* header#header-nothome {
+
+} */
+div#right-header {
+  width: 50wv;
+  margin-right: 5vw;
+  margin-top: 20px;
+  float: right;
+  position: relative;
+}
+div#left-header {
+  width: 50wv;
+  margin-left: 5vw;
+  margin-top: 20px;
+  float: left;
+  position: relative;
+}
+img#logo-header {
+  height: 50%;
+}
+/* footer {
+  height: 10vh;
+  background-color: #fcf6ef;
+}
+img#logo-footer {
+  height: 100%;
+} */
+/* Pages */
+div#landing {
+  background-image: url('../res/cover.png');
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
+}
+div.content {
+  margin-top: calc(10vh + 50px);
+  position: absolute;
+  width: 100%;
+}
+div.title-container {
+  background-image: url('../res/pagetitle.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 10vh;
+  color: #fff;
+}
+p.title {
+  font-size: 2rem;
+  margin-top: 1.8vh;
 }

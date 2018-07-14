@@ -9,10 +9,11 @@ var cookieParser = require('cookie-parser');
 
 // assigning routes
 var index = require('./routes/index');
+var practiceprofile = require('./routes/practice-profile');
 
 // assign port
 var app = express();
-var port = (process.env.PORT || 8082); //process.env.PORT required for heroku
+var port = (process.env.PORT || 80);
 var server = http.createServer(app);
 
 // view engine setup
@@ -37,6 +38,7 @@ app.engine('hbs', hbs.express4({
 
 // use route (javascript file) for said page (route says what layout and view (hbs files) to use
 app.use('/', index);
+app.use('/practice-profile', practiceprofile);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
