@@ -1,0 +1,21 @@
+{
+  "name": "IDP Architects",
+  "description": "",
+  "private": true,
+  "engines": {
+    "node": "8.11.3",
+    "npm": "6.1.0"
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
+    "express": "4.16.2",
+    "express-hbs": "^1.0.4",
+    "http": "0.0.0",
+    "morgan": "^1.8.2",
+    "path": "^0.12.7"
+  }
+}

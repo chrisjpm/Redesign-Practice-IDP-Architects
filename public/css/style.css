@@ -1,0 +1,5 @@
+body {
+  background-image: url('../res/cover.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
