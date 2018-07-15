@@ -9,7 +9,12 @@ var cookieParser = require('cookie-parser');
 
 // assigning routes
 var index = require('./routes/index');
+var people = require('./routes/people');
+var news = require('./routes/news');
+var contact = require('./routes/contact');
 var practiceprofile = require('./routes/practice-profile');
+var sectorsservices = require('./routes/sectors-services');
+var projects = require('./routes/projects');
 
 // assign port
 var app = express();
@@ -38,7 +43,12 @@ app.engine('hbs', hbs.express4({
 
 // use route (javascript file) for said page (route says what layout and view (hbs files) to use
 app.use('/', index);
+app.use('/people', people);
+app.use('/news', news);
+app.use('/contact', contact);
 app.use('/practice-profile', practiceprofile);
+app.use('/sectors-services', sectorsservices);
+app.use('/projects', projects);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

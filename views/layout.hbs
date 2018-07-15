@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../public/res/favicon.png" type="image/png">
     <title>{{{domain}}} {{title}}</title>
 
     <link rel="stylesheet" href="../public/css/style.css">
@@ -18,15 +19,25 @@
       <header>
         {{>header-home}}
       </header>
+      <main>
+        {{{body}}}
+      </main>
     {{else}}
       <header id="header-nothome">
         {{>header}}
       </header>
+      <main id="main-nothome">
+        <div class="title-container" uk-parallax="bgy: -900">
+          <div class="uk-container container-xs">
+            <p class="title uk-animation-slide-left-medium">{{title}}</p>
+          </div>
+        </div>
+        {{{body}}}
+      </main>
     {{/if}}
 
-    <main>
-      {{{body}}}
-    </main>
+
+
 
     <!-- <footer class="uk-margin-remove">
       {{>footer}}
