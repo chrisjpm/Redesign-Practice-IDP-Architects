@@ -2,19 +2,16 @@
 body {
   margin: 0;
 }
-.container-xs {
-  max-width: 70vw !important;
+div.container-xs {
+  margin: 0 calc(5vw + 25px);
 }
 /* Partials */
 header {
   position: absolute;
   padding: 25px;
-  height: 10vh;
   width: calc(100% - 50px);
+  height: 10vh;
 }
-/* header#header-nothome {
-
-} */
 div#right-header {
   width: 50wv;
   margin-right: 5vw;
@@ -31,47 +28,82 @@ div#left-header {
 }
 img#logo-header {
   height: 50%;
+  margin-top: 13px;
 }
-/* footer {
-  height: 10vh;
-  background-color: #fcf6ef;
+div.parallax {
+  background-image: url('../res/pagetitle3.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  position: relative;
+  height: calc(19vh + 50px);
 }
-img#logo-footer {
-  height: 100%;
-} */
+div.title-container {
+  height: 9vh;
+  color: #fff;
+  padding-top: calc(10vh + 50px);
+  padding-left: calc(5vw + 25px);
+}
 /* Pages */
 div#landing {
-  background-image: url('../res/cover.png');
+  background-image: url('../res/cover-sm.png');
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
 }
+div#landing>div {
+  padding: 0 calc(5vw + 25px);
+}
 main#main-nothome {
-  margin-top: calc(10vh + 50px);
   position: absolute;
   width: 100%;
 }
-div.title-container {
-  background-image: url('../res/pagetitle2.png');
+h1.title {
+  color: #fff;
+  font-size: 2rem;
+  line-height: 8vh;
+}
+div.subtitle-container {
+  background-image: url('../res/pagesubtitle2.png');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 9vh;
+  height: 7vh;
   color: #fff;
+  padding: 0 calc(5vw + 25px);
 }
-p.title {
-  font-size: 2rem;
-  margin-top: 2vh;
+h2.subtitle {
+  color: #fff;
+  font-size: 1.9rem;
+  line-height: 7vh;
+  text-align: left;
+  float: left;
+}
+a.openss {
+  margin-top: 1.333vh;
+  float: right;
+}
+a.openss:hover {
+  color: #d99dad;
+}
+div.project-ss {
+  position: relative;
+}
+ul.uk-dotnav {
+  padding-bottom: 20px;
+}
+.uk-modal-container .uk-modal-dialog {
+  width: 77vw !important;
 }
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 12px;
 }
 ::-webkit-scrollbar-track {
-  background: #d4f0f9;
+  background: #d9c2c7;
 }
 ::-webkit-scrollbar-thumb {
-  background: #b1dbe9;
+  background: #d7acbb;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #8ec1d2;
+  background: #d99dad;
 }

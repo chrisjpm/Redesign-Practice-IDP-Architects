@@ -1,0 +1,17 @@
+{
+  "projects" :
+    [
+      {
+        "title": "project1",
+        "bodyText": "bodytext1",
+        "images": ["img1.png", "img2.png"],
+        "thumbnail": "img2.png"
+      },
+      {
+        "title": "project2",
+        "bodyText": "bodytext2",
+        "images": ["img3.png", "img4.png"],
+        "thumbnail": "img4.png"
+      }
+    ]
+}
