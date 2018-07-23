@@ -4,8 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="../public/res/favicon.png" type="image/png">
-    <title>{{{domain}}} {{title}}/{{subtitle}}</title>
-
+    {{#if project}}
+      <title>{{{domain}}} {{title}}/{{subtitle}}</title>
+    {{else}}
+      <title>{{{domain}}} {{title}}</title>
+    {{/if}}
     <link rel="stylesheet" href="../public/css/style.css">
     <link rel="stylesheet" href="../public/uikit/css/uikit.min.css">
   </head>
