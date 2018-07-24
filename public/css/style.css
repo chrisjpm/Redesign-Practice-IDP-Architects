@@ -5,12 +5,17 @@ body {
 div.container-xs {
   margin: 0 calc(5vw + 25px);
 }
+.uk-button {
+  padding: 0 20px !important;
+  font-size: 0.9rem !important;
+  line-height: 32px !important;
+}
 /* Partials */
 header {
   position: absolute;
   padding: 25px;
   width: calc(100% - 50px);
-  height: 10vh;
+  height: 8vh;
 }
 div#right-header {
   width: 50wv;
@@ -27,8 +32,7 @@ div#left-header {
   position: relative;
 }
 img#logo-header {
-  height: 50%;
-  margin-top: 13px;
+  height: 45%;
 }
 div.parallax {
   background-image: url('../res/pagetitle3.png');
@@ -36,12 +40,12 @@ div.parallax {
   background-size: cover;
   top: 0;
   position: relative;
-  height: calc(19vh + 50px);
+  height: calc(16vh + 50px);
 }
 div.title-container {
-  height: 9vh;
+  height: 6vh;
   color: #fff;
-  padding-top: calc(10vh + 50px);
+  padding-top: calc(8vh + 50px);
   padding-left: calc(5vw + 25px);
 }
 /* Pages */
@@ -67,19 +71,19 @@ div.subtitle-container {
   background-image: url('../res/pagesubtitle2.png');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 7vh;
+  height: 6vh;
   color: #fff;
   padding: 0 calc(5vw + 25px);
 }
 h2.subtitle {
   color: #fff;
-  font-size: 1.9rem;
-  line-height: 7vh;
+  font-size: 1.6rem;
+  line-height: 5.5vh;
   text-align: left;
   float: left;
 }
 a.openss {
-  margin-top: 1.333vh;
+  margin-top: 1.03vh;
   float: right;
 }
 a.openss:hover {
