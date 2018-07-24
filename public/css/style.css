@@ -7,8 +7,13 @@ div.container-xs {
 }
 .uk-button {
   padding: 0 20px !important;
-  font-size: 0.9rem !important;
-  line-height: 32px !important;
+  font-size: 1.5vh !important;
+  line-height:4vh !important;
+}
+@media screen and (min-height: 1350px) {
+  .uk-button {
+    font-size: 20px !important;
+  }
 }
 /* Partials */
 header {
@@ -32,7 +37,7 @@ div#left-header {
   position: relative;
 }
 img#logo-header {
-  height: 45%;
+  height: 50%;
 }
 div.parallax {
   background-image: url('../res/pagetitle3.png');
@@ -64,7 +69,7 @@ main#main-nothome {
 }
 h1.title {
   color: #fff;
-  font-size: 2rem;
+  font-size: 3.7vh;
   line-height: 8vh;
 }
 div.subtitle-container {
@@ -77,7 +82,7 @@ div.subtitle-container {
 }
 h2.subtitle {
   color: #fff;
-  font-size: 1.6rem;
+  font-size: 3.4vh;
   line-height: 5.5vh;
   text-align: left;
   float: left;
@@ -94,9 +99,6 @@ div.project-ss {
 }
 ul.uk-dotnav {
   padding-bottom: 20px;
-}
-.uk-modal-container .uk-modal-dialog {
-  width: 77vw !important;
 }
 /* Scrollbar */
 ::-webkit-scrollbar {
