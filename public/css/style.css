@@ -37,6 +37,7 @@ div#left-header {
   position: relative;
 }
 img#logo-header {
+  margin-top: 10px;
   height: 50%;
 }
 div.parallax {
